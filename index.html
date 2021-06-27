@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body
+    class="flex justify-center h-screen items-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"
+  >
+    <div
+      class="card w-72 h-96 bg-white shadow-xl flex flex-col justify-center items-center relative"
+    >
+      <div class="imgbox w-full h-full z-10 absolute shadow-xl">
+        <img
+          src="https://i.ibb.co/YTdNfPz/Optimized-IMG-20210228-100309-1-min-p5nqi9zcep08zfz2sm2vkfob3ec7bz7tl5tf5h7z1c.jpg"
+          class="image w-full h-full absolute"
+        />
+        <img
+          src="https://previews.123rf.com/images/bannosuke/bannosuke1709/bannosuke170900006/85572363-network-connection-with-matrix-binary-vector.jpg"
+          class="image w-full h-full absolute"
+        />
+      </div>
+
+      <h2 class="font-bold text-3xl">Khagesh Bansal</h2>
+      <h2 class="text-xl text-red-500 font-bold">Web Developer</h2>
+
+      <div class="social m-5">
+        <a
+          href="#"
+          class="bg-black text-white p-1 m-1 text-lg hover:bg-red-500"
+        >
+          <i class="fab fa-facebook-f fa-fw"></i
+        ></a>
+        <a
+          href="#"
+          class="bg-black text-white p-1 m-1 text-lg hover:bg-red-500"
+        >
+          <i class="fab fa-twitter fa-fw"></i
+        ></a>
+        <a href="#" class="bg-black text-white p-1 m-1 text-lg hover:bg-red-500"
+          ><i class="fab fa-linkedin-in fa-fw"></i
+        ></a>
+        <a
+          href="#"
+          class="bg-black text-white p-1 m-1 text-lg hover:bg-red-500"
+        >
+          <i class="fab fa-instagram fa-fw"></i
+        ></a>
+      </div>
+      <!-- social closed -->
+    </div>
+    <!--  card closed -->
+  </body>
+  <style>
+    .card {
+      transform-style: preserve-3d;
+      perspective: 1000px;
+      transition: 1s;
+    }
+    .imgbox {
+      transform-style: preserve-3d;
+      transform-origin: left;
+      transition: 1s;
+    }
+    .image {
+      transform-style: preserve-3d;
+      transition: 1s;
+      backface-visibility: hidden;
+    }
+    .card:hover {
+      transform: translateX(50%);
+    }
+    .card:hover .imgbox {
+      transform: rotateY(-180deg);
+    }
+
+    .image:nth-child(2) {
+      transform: rotateY(180deg);
+    }
+  </style>
+</html>
