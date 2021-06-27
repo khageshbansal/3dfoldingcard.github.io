@@ -21,7 +21,7 @@
     class="flex justify-center h-screen items-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"
   >
     <div
-      class="card w-72 h-96 bg-white shadow-xl flex flex-col justify-center items-center relative"
+      class="card w-64 h-96 bg-white shadow-xl flex flex-col justify-center items-center relative"
     >
       <div class="imgbox w-full h-full z-10 absolute shadow-xl">
         <img
@@ -79,6 +79,7 @@
       transform-style: preserve-3d;
       transition: 1s;
       backface-visibility: hidden;
+      object-fit: cover;
     }
     .card:hover {
       transform: translateX(50%);
@@ -89,6 +90,7 @@
 
     .image:nth-child(2) {
       transform: rotateY(180deg);
+      transition: 0s;
     }
   </style>
 </html>
